@@ -510,7 +510,7 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
 #    # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
 #    write /proc/sys/net/ipv4/tcp_adv_win_scale  2
 
-service charger /system/bin/charger
+service vendor.charger /system/bin/chargeonlymode
     class charger
     user system
     group system graphics input
