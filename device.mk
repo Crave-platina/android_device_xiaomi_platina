@@ -16,6 +16,10 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.bootimage.build.date.utc \
     ro.build.date.utc
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=platina \
