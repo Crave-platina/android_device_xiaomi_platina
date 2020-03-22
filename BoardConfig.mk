@@ -82,6 +82,7 @@ TARGET_KERNEL_CONFIG := platina_fox_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/platina
 else
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
+#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image-acrux-defconfig.gz-dtb
 ifeq ($(FOX_USE_STOCK_KERNEL),1)
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image-stock.gz-dtb
 endif
