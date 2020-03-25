@@ -1,6 +1,8 @@
 #
 # Copyright 2017 The Android Open Source Project
 #
+# Copyright 2020 The OrangeFox Recovery Project
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -46,12 +48,13 @@ PRODUCT_DEVICE := platina
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8 Lite
 PRODUCT_MANUFACTURER := Xiaomi
+TARGET_VENDOR_PRODUCT_NAME := platina
+TARGET_VENDOR_DEVICE_NAME := platina
 
 # enable stock zip packages flash
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.secure=1 \
     ro.adb.secure=0 \
-    ro.hardware.keystore=sdm660 \
     ro.product.name=platina \
     ro.allow.mock.location=0
 #

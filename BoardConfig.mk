@@ -46,6 +46,9 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
 
+# SAR
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
@@ -54,22 +57,12 @@ TW_INCLUDE_FBE := true
 TW_INCLUDE_CRYPTO_FBE := true
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 
-# Fix userdata decryption (vold)
-#TW_CRYPTO_SYSTEM_VOLD_MOUNT := vendor cust odm
-TW_CRYPTO_SYSTEM_VOLD_MOUNT := vendor system
-TW_CRYPTO_USE_SYSTEM_VOLD := \
-    qseecomd \
-    servicemanager \
-    hwservicemanager \
-    keymaster-3-0
-
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1
-BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=1 androidboot.configfs=true
-BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=1 firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -82,7 +75,6 @@ TARGET_KERNEL_CONFIG := platina_fox_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/platina
 else
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
-#TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image-acrux-defconfig.gz-dtb
 ifeq ($(FOX_USE_STOCK_KERNEL),1)
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image-stock.gz-dtb
 endif
@@ -129,6 +121,9 @@ TW_INCLUDE_NTFS_3G := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_THEME := portrait_hdpi
 TW_SCREEN_BLANK_ON_BOOT := true
+TW_IGNORE_MISC_WIPE_DATA := true
+TWRP_INCLUDE_LOGCAT := true
+TARGET_OTA_ASSERT_DEVICE := platina
 
 # exFAT FS Support
 TW_INCLUDE_FUSE_EXFAT := true
