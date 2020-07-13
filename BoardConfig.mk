@@ -148,7 +148,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Platform
-BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := sdm660
 
 # Power
