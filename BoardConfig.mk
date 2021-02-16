@@ -128,3 +128,6 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 
 # Ramdisk
 LZMA_RAMDISK_TARGETS := recovery
+
+# TWRP extra version
+TW_DEVICE_VERSION ?= 4.4
