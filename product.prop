@@ -28,5 +28,10 @@ ro.charger.enable_suspend=true
 # Cutout
 ro.support_hide_display_cutout=true
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.log_stats=true
+ro.lmk.use_psi=false
+
 # Telephony
 ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
