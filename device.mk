@@ -33,6 +33,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    sound_trigger.primary.sdm660:32
+
+PRODUCT_PACKAGES += \
     liba2dpoffload \
     libaudio-resampler \
     libhdmiedid \
