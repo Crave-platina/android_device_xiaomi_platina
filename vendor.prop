@@ -127,7 +127,6 @@ debug.sf.early_phase_offset_ns=1500000
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.hw=1
-debug.sf.latch_unsignaled=1
 debug.sf.recomputecrop=0
 persist.sys.sf.color_mode=9
 persist.sys.sf.native_mode=2
