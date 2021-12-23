@@ -50,12 +50,12 @@ TARGET_NO_BOOTLOADER := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Crypto
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 TARGET_HW_DISK_ENCRYPTION := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_FBE := true
 TW_INCLUDE_CRYPTO_FBE := true
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+TW_INCLUDE_FBE := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000
@@ -98,9 +98,12 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 AB_OTA_UPDATER := false
 
 # TWRP specific build flags
+TARGET_OTA_ASSERT_DEVICE := platina
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_DEFAULT_BRIGHTNESS := 1250
+TW_MAX_BRIGHTNESS := 4095
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true
@@ -112,7 +115,7 @@ TW_USE_TOOLBOX := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_IGNORE_MISC_WIPE_DATA := true
 TWRP_INCLUDE_LOGCAT := true
-TARGET_OTA_ASSERT_DEVICE := platina
+TARGET_USES_LOGD := true
 
 # exFAT FS Support
 TW_INCLUDE_FUSE_EXFAT := true
@@ -120,9 +123,8 @@ TW_INCLUDE_FUSE_EXFAT := true
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
 
-TW_DEFAULT_BRIGHTNESS := 1250
-TW_MAX_BRIGHTNESS := 4095
-
+# Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
-TARGET_USES_LOGD := true
+
+# Ramdisk
 LZMA_RAMDISK_TARGETS := recovery
