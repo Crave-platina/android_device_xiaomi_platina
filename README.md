@@ -1,24 +1,26 @@
-For building TWRP for Xiaomi MI 8 Lite
+Recovery tree for Xiaomi MI 8 Lite
+======================================
 
-Xiaomi Mi MI 8 Lite was announced and released in Sep 2018.
+The Xiaomi MI 8 Lite (codenamed _"platina"_) is a mid-range smartphone from Xiaomi announced in March 2018.
 
 ## Device specifications
 
-| Device       | Xiaomi Mi 8 Lite                                    |
-| -----------: | :-------------------------------------------------- |
-| SoC          | Qualcomm SDM660 Snapdragon 660                      |
-| CPU          | 4x2.2 GHz Kryo 260 & 4x1.8 GHz Kryo	      	     |
-| GPU          | Adreno 512                                          |
-| Memory       | 4 GB RAM or 6 GB RAM (LPDDR4X)                      |
-| Android      | 8.1                                      	     |
-| Storage      | 128GB, 64GB emmc 5.1 flash storage  		     |
-| Battery      | Non-removable Li-Po 3350 mAh                  	     |
-| Dimensions   | 156.4 x 75.8 x 7.5 mm                               |
-| Display      | 2280 x 1080 (19:9), 6.26 inch                       |
-| Rear camera 1| 12MP, f/1.9 Dual LED flash                          |
-| Front camera | 24MP, 4 in 1, 1.8µm  		 		     |
+| Device                  | Xiaomi MI 8 Lite                                            |
+| ----------------------- | :---------------------------------------------------------- |
+| SoC                     | Qualcomm SDM660 Snapdragon 660                              |
+| CPU                     | 8x Qualcomm® Kryo™ 260 CPU                                  |
+| GPU                     | Adreno 512                                                  |
+| Memory                  | 4GB / 6GB RAM (LPDDR4X)                                     |
+| Shipped Android version | 8.1.0                                                       |
+| Storage                 | 64GB / 128GB eMMC 5.1 flash storage                         |
+| MicroSD                 | Up to 256 GB                                                |
+| Battery                 | Non-removable Li-Po 3350 mAh                                |
+| Dimensions              | 156.4 x 75.8 x 7.5 mm                                       |
+| Display                 | 2280 x 1080 (19:9), 6.26 inch                               |
+| Rear camera 1           | 12 MP, f/1.9, 1/2.55", 1.4µm, dual pixel PDAF               |
+| Rear camera 2           | 5 MP, f/2.2, 1.12µm, depth sensor                           |
+| Front camera 1          | 24 MP, f/2.0, 1.8µm                                         |
 
 ## Device picture
 
-![Xiaomi Mi 8 Lite ](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543643214959&di=3b0c81b537ff2e742079764e8cf1aead&imgtype=0&src=http%3A%2F%2Fask-fd.zol-img.com.cn%2Fg5%2FM00%2F01%2F07%2FChMkJlv2fVaIcCdUAAA_3fbzsx8AAtT_wBUBrgAAD_1288.jpg)
-
+![Xiaomi Mi 8 Lite ](https://i.imgur.com/0ffufJ1.png "Xiaomi MI 8 Lite")
