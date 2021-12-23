@@ -57,4 +57,3 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.product.name=platina \
     ro.allow.mock.location=0
-#

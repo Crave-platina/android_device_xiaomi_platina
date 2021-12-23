@@ -49,4 +49,3 @@
 /tz             emmc     /dev/block/bootdevice/by-name/tz           		flags=display="TZ";backup=1;flashimg=1
 /keymaster      emmc     /dev/block/bootdevice/by-name/keymaster    		flags=display="keymaster";backup=1;flashimg=1
 /devcfg         emmc     /dev/block/bootdevice/by-name/devcfg       		flags=display="devcfg";backup=1;flashimg=1
-#
