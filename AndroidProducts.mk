@@ -16,3 +16,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_platina.mk
+
+COMMON_LUNCH_CHOICES := \
+    omni_platina-userdebug \
+    omni_platina-eng
