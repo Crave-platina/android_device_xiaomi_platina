@@ -59,6 +59,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
+    androidboot.boot_devices=soc/c0c4000.sdhci \
     androidboot.configfs=true \
     androidboot.hardware=qcom \
     androidboot.init_fatal_reboot_target=recovery \
