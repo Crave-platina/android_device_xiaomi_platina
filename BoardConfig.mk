@@ -75,6 +75,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_platina
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
+    androidboot.boot_devices=soc/c0c4000.sdhci \
     androidboot.configfs=true \
     androidboot.hardware=qcom \
     androidboot.usbcontroller=a800000.dwc3 \
