@@ -9,3 +9,6 @@ allow hal_power_default device_latency:chr_file rw_file_perms;
 
 # To get/set powerhal state property
 set_prop(hal_power_default, vendor_power_prop)
+
+# Hide dac_override spam
+dontaudit hal_power_default self:capability dac_override;
