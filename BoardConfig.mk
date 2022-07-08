@@ -135,6 +135,7 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_THEME := portrait_hdpi
 TW_USE_TOOLBOX := true
 TW_NO_HAPTICS := true
+TW_NO_CPU_TEMP := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_IGNORE_MISC_WIPE_DATA := true
 TW_Y_OFFSET := 80
