@@ -62,8 +62,8 @@ on property:sys.boot_completed=1
     write /dev/blkio/background/blkio.group_idle 0
 
     # Defaults for power hints
-    write /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count 0
     write /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory 0
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count 0
 
 on early-init
     # configure governor settings
@@ -103,5 +103,12 @@ on init
     write /proc/sys/kernel/sched_lib_mask_force 255
 
     # Defaults for power hints
-    write /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count 3
     write /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory 20
+    write /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count 3
+
+    # Setup permission for powerHAL
+    chown system system /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory
+    chown system system /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count
+
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hist_memory
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count
