@@ -146,11 +146,6 @@ PRODUCT_PACKAGES += \
     qcom.fmradio.xml
 endif
 
-# fwk-detect
-PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
@@ -361,7 +356,9 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
-    libjson.vendor
+    libjson.vendor \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor
 
 # RIL
 PRODUCT_PACKAGES += \
