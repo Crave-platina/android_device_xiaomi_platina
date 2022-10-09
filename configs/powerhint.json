@@ -101,8 +101,7 @@
       "Values": [
         "0",
         "3"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "CPUBWHistMemory",
@@ -110,8 +109,7 @@
       "Values": [
         "0",
         "20"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "PowerHALMainState",
