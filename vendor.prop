@@ -110,6 +110,7 @@ vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
 
 # Display
+debug.cpurend.vsync=false
 debug.hwui.renderer=opengl
 debug.renderengine.backend=skiaglthreaded
 debug.sf.auto_latch_unsignaled=0
