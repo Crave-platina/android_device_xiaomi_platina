@@ -28,6 +28,9 @@
 # Qcom common decryption
 import /init.recovery.qcom_decrypt.rc
 
+on early-init
+    start set_permissive
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
@@ -54,3 +57,10 @@ on boot
     write /sys/bus/cpu/devices/cpu5/online 0
     write /sys/bus/cpu/devices/cpu6/online 0
     write /sys/bus/cpu/devices/cpu7/online 0
+
+service set_permissive /system/bin/set_permissive.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
