@@ -111,7 +111,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     libdisplayconfig \
     libtinyxml \
-    libtinyxml.vendor \
     libqdMetaData \
     libqdMetaData.system \
     vendor.display.config@1.1
@@ -361,7 +360,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
-    libjson.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
