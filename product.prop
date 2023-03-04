@@ -22,5 +22,5 @@ ro.charger.enable_suspend=true
 # Cutout
 ro.support_hide_display_cutout=true
 
-# Radio
-ro.telephony.block_binder_thread_on_incoming_calls=false
+# Telephony
+ro.telephony.handle_audio_direction_changes_between_call_state_changes=false
