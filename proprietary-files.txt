@@ -112,10 +112,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|23706dcfa35cc6f7dee934e138
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a6b0d3978b3506d
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
 
-# Bluetooth (aptX) - from jasmine
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|8305c614ebf13f84f15989631b8fdfdb9828d9be
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|eb0e912d25b06f977d5a89345c72d142b7ffb8ae
-
 # Camera - from platina
 vendor/lib/hw/camera.sdm660.so|9a9c0e9298791426ba0292e5fd732b7f94f9228b
 vendor/lib/lib_lowlight.so|c630ef29fd38d028bb6ce1df033bf18ecb4fccff
