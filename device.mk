@@ -390,6 +390,11 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
+PRODUCT_PACKAGES += \
+    e2fsck_ramdisk \
+    tune2fs_ramdisk \
+    resize2fs_ramdisk
+
 # RIL
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
