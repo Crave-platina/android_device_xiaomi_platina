@@ -4,6 +4,9 @@ persist.vendor.cne.feature=1
 # DPM
 persist.vendor.dpm.feature=11
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
 
