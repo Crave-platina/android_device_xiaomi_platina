@@ -55,6 +55,13 @@ on early-boot
     write /sys/devices/virtual/npu/msm_npu/boot 1
     write /sys/kernel/boot_slpi/boot 1
     write /sys/devices/virtual/cvp/cvp/boot 1
+    write /sys/module/drm/parameters/vblankoffdelay -1
+    chown system graphics /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
+    chmod 0660 /sys/devices/virtual/hdcp/msm_hdcp/min_level_change
+    chown system graphics /sys/class/lcd_bias/secure_mode
+    chmod 0660 /sys/class/lcd_bias/secure_mode
+    chown system graphics /sys/class/leds/wled/secure_mode
+    chmod 0660 /sys/class/leds/wled/secure_mode
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
 
     # for backward compatibility
@@ -399,12 +406,6 @@ on property:sys.boot_completed=1
     #WDSP FW boot sysfs node used by STHAL
     chown media audio /sys/kernel/wdsp0/boot
     chown media audio /sys/kernel/wcd_cpe0/fw_name
-
-on property:persist.vendor.radio.atfwd.start=false
-    stop vendor.atfwd
-
-on property:vendor.radio.atfwd.start=false
-    stop vendor.atfwd
 
 # corefile limit
 #on property:persist.debug.trace=1

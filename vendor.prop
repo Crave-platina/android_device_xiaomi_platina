@@ -165,6 +165,8 @@ persist.dbg.wfc_avail_ovr=1
 # Media
 debug.stagefright.omx_default_rank=0
 media.stagefright.thumbnail.prefer_hw_codecs=true
+vendor.media.target.version=1
+vendor.sys.media.target.version=1
 vendor.vidc.dec.enable.downscalar=1
 vendor.vidc.enc.disable_bframes=1
 vendor.vidc.enc.disable.pq=true
