@@ -514,10 +514,9 @@ service vendor.charger /system/bin/chargeonlymode
     seclabel u:r:charger:s0
 
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
-    class core
+    class late_start
     user root
     group root
-    disabled
 
 service vendor.msm_irqbl_sdm630 /vendor/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance_sdm630.conf
     class core
