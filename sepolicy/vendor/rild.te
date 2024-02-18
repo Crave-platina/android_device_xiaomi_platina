@@ -1,2 +1,4 @@
 # Allow binder communication with qtidataservices_app
 binder_call(rild, qtidataservices_app)
+
+allow rild fwk_sensor_service:service_manager find;
