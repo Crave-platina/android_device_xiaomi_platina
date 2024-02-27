@@ -778,12 +778,10 @@ vendor/lib64/libssd.so|a64337d8044607b81adcf7e8c5760cf8cdcf82b4
 -app/FingerprintExtensionService/FingerprintExtensionService.apk|ec8ba7b449a51e8c7f5da56facb5396e9e571b86
 framework/com.fingerprints.extension.jar|5a0cad8c4aa718085ee585a14f9462eb5fac6f0c
 vendor/etc/permissions/com.fingerprints.extension.xml|581e694124ca2c241339e1bd686a63fcf61d00db
-vendor/lib64/com.fingerprints.extension@1.0.so|6892504168f06050b06e8a4e158707e243eac4cd
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so|902449fa1839f4882efc542d553c6d68bae490e5
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so|0fd4b17287c8ba1fb540ada99a866b86d125707a
 vendor/lib64/libgf_ca.so|df49f0b00199497060a8d1e01309025519dd7c8d
 vendor/lib64/libgf_hal.so|1a5256bb6fc5b44c220ad748d0c52644c6143114
-vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so|c1c340fa46c83783d6678ac070c951e6ac509852
 
 # Gatekeeper - from platina
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|a189a50515831e6ac9a7e88a165ac979ae6ac077
