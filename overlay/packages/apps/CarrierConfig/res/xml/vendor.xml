@@ -83,6 +83,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_allow_deflect_ims_call_bool" value="false" />
         <!-- PA: Enable LTE+ icon by default -->
         <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
+        <!-- Set LTE+ threshold bandwidth to 0 by default -->
+        <int name="lte_plus_threshold_bandwidth_khz_int" value="0"/>
 
         <!-- Config for RTT feature support -->
         <boolean name="carrier_rtt_auto_upgrade" value="false" />
