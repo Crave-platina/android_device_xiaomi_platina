@@ -1019,7 +1019,6 @@ vendor/lib64/libqmi_common_so.so|4a162382e0d611dacbb803371e78eb56786078b9
 vendor/lib64/libqmi_csi.so|6d22ed6353c791ea1804c195b92b02dc28a679c3
 vendor/lib64/libqmi_encdec.so|8a365cf7472c187c02fa0649e09fee529ded7563
 vendor/lib64/libqmiservices.so|2e259463cbeb329caec303b642ab4068c8d10be5
-vendor/lib64/libril-qc-logger.so|7f80da37d120faffd72838b76d74102c7321e3a3
 
 # Radio - from FP3 - 6.A.025.0
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|341ac4f8b754883df97f2e9920f1e9a255a6a160
@@ -1104,6 +1103,7 @@ vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql|4701219a79190
 
 # Radio - from nio_retcn - RRN31.Q3-1-11-6/f81cc
 vendor/lib64/deviceInfoServiceModule.so|c7d4021528f3a43320d0f109a9ed5f765a6a92a2
+vendor/lib64/libril-qc-logger.so|2cb2bdeed66f69753cca01bc66a1deb3ed51a2a9
 
 # Radio - IMS - from FP3 - 6.A.025.0
 system_ext/lib64/lib-imscamera.so|8170256dbf9120ff05f193ba937c718d9c580881
