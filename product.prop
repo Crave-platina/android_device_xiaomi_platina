@@ -19,5 +19,8 @@ persist.vendor.imx376_sunny.low.lux=290
 ro.charger.disable_init_blank=true
 ro.charger.enable_suspend=true
 
+# Cutout
+ro.support_hide_display_cutout=true
+
 # Radio
 ro.telephony.block_binder_thread_on_incoming_calls=false

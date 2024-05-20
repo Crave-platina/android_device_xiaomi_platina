@@ -289,6 +289,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay \
     NoCutoutOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
