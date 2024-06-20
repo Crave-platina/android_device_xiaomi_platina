@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0:64
 
 PRODUCT_PACKAGES += \
+    camera.sdm660 \
     libMegviiFacepp-0.5.2 \
     libmegface
 

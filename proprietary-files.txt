@@ -113,7 +113,6 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|117b74f1df4ee67297f431ae47
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|a7c3fdcdfdf2d982b04baa89e0e4dc5f5d505bf7
 
 # Camera - from platina
-vendor/lib/hw/camera.sdm660.so|9a9c0e9298791426ba0292e5fd732b7f94f9228b
 vendor/lib/lib_lowlight.so|c630ef29fd38d028bb6ce1df033bf18ecb4fccff
 vendor/lib/libarcsoft_beautyshot.so|f9edc3f3fce3aed0538ae5e332ceae22396a225b
 vendor/lib/libarcsoft_dualcam_refocus.so|9e4a5dcd01544b221e920c0506db14a6853e050a
@@ -125,7 +124,6 @@ vendor/lib/libdepthmapwrapper.so|32c37fcd87bf3c253a2eb6d6451668db446e9a3b
 vendor/lib/libFaceGrade.so|ee9175e0f070dc061884bb66fbcc08302acf95d4
 vendor/lib/libflash_pmic.so|ec5af310fad37192bede8ad7a285ace1ec47a20a
 vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
-vendor/lib/libhal_dbg.so|acb6f7125e4ee3f7c36ef207901ad0e248f92e05
 vendor/lib/libjpegdhw.so|368a81eeb7699eea07af18106a2b6980c3125929
 vendor/lib/libjpegdmahw.so|392f5197ff54cce1968b753a8b1a180ea0a00680
 vendor/lib/libjpegehw.so|28bf2d184293ceb7f267bb32e3d79684d427bfbf
@@ -165,7 +163,6 @@ vendor/lib/libmmcamera_imx362.so|59513533be1ef509b57f850fd155d1ba92740fe2
 vendor/lib/libmmcamera_imx376.so|c0c7a8fbd3d2301047811ceb746e4f94ff3eca96
 vendor/lib/libmmcamera_imx378.so|09b1cb9951bace64c04536f7b9d3cd1a41620f3b
 vendor/lib/libmmcamera_imx519.so|4ac6d35697b1d6af606391174237aa764cee9eaa
-vendor/lib/libmmcamera_interface.so|de327d33dfe82c4ae519a1a2bb118d8d15850ce3
 vendor/lib/libmmcamera_irs1645.so|af5dd81bfb6bcff15ee4feaf0a13ac11480c077f
 vendor/lib/libmmcamera_isp_abf48.so|4bb4a60b0f163d8bef182acb3845ddce48884b98
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so|2acd58327bbcb77f90592edf081f993bd68caac4
@@ -299,14 +296,12 @@ vendor/lib/libmmcamera2_sensor_modules.so|a90e64e61f838c73b6fb71dcb16a20177b8f47
 vendor/lib/libmmcamera2_stats_algorithm.so|917502b453b407b81c3d213085bdfadf6ea72403
 vendor/lib/libmmcamera2_stats_lib.so|022cc999327c8bdd2b88da2ee9baadb9abfae904
 vendor/lib/libmmcamera2_stats_modules.so|0b1d34c47f267c924a3a85fab34918c9b411578d
-vendor/lib/libmmjpeg_interface.so|420acd56942081750cc1077ba6f9a084b6863be5
 vendor/lib/libmmjpeg.so|ea6edad4716410010ce5b619729d6ed29d9418dc
 vendor/lib/libmmlib2d_interface.so|89fb1b43d916afc377488a41faf805d2aa96c07b
 vendor/lib/libmmqjpeg_codec.so|bcdbc782537fbef3e06d3246b7f66bd7adef4f31
 vendor/lib/libmmqjpegdma.so|377af61d1fa2b526e526449c1e42fdab17156a16
 vendor/lib/libmorphohht4.0.so|9b5a4969277650aae08b658574f53914774e2885
 vendor/lib/libmpbase.so|2100c91ae91143096128adfc78047e25538440ff
-vendor/lib/libqomx_core.so|9b37f24909ce44d9392df0d422c39d0485bfb258
 vendor/lib/libqomx_jpegdec.so|7c65e70f99172d82356ff7832a91e1b9bfab8b82
 vendor/lib/libqomx_jpegenc_pipe.so|c85a23b4149fa6d80d6a01d7c34c4882f80e51ba
 vendor/lib/libqomx_jpegenc.so|de1b35b348dd3e655902c57cc859de64b64524d6
