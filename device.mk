@@ -6,6 +6,9 @@
 
 DEVICE_PATH := device/xiaomi/platina
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
