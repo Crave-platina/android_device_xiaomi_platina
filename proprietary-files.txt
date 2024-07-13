@@ -1149,11 +1149,13 @@ vendor/etc/sensors/sensor_def_qcomdev.conf|1edf2fab329d8b8b6cff338067549ac4c31ca
 vendor/lib/hw/activity_recognition.sdm660.so|f5a8a33555b548a148e18c2648bb4e772718e695
 vendor/lib/libsensor_reg.so|76014d679720aa48fed871958850ffdb577f9a96
 vendor/lib/libsensor1.so|7c5adc804e4caf400f3dbcaa3c46ff9992936a1f
-vendor/lib/sensors.ssc.so|3703113a11d1a4af26334332eb1dd330ab87bb66
 vendor/lib64/hw/activity_recognition.sdm660.so|c4b08bcbe2672718f368f2ffc929ca2f52bc2edb
 vendor/lib64/libsensor_reg.so|f80251000505099468db54ac99bc50f640e4f551
 vendor/lib64/libsensor1.so|8acdea6c13704082fd3e49cd553fe3935760d74d
-vendor/lib64/sensors.ssc.so|a1e67932065166b57a68dc9898a99b27e14032cb
+
+# Sensors - from pl2_sprout QKQ1.190828.002-00WW_4_150
+vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
+vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 
 # Soter - from jason V12.0.1.0.PCHCNXM
 app/SoterService/SoterService.apk|c6c6063f83588db6c572779624458a4d1f094213
