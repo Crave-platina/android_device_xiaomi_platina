@@ -386,6 +386,9 @@ on property:persist.vendor.ssr.enable_ramdumps=0
 #on property:persist.vendor.sys.rawdump_copy=0
 #    write /sys/kernel/dload/emmc_dload 0
 
+    start vendor.qcrild
+    start vendor.qcrild2
+
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
     #Reset read ahead for dm-0, dm-1 and dm-2 to 512kb
@@ -505,20 +508,6 @@ service vendor.atfwd /vendor/bin/ATFWD-daemon
 #on property:ro.data.large_tcp_window_size=true
 #    # Adjust socket buffer to enlarge TCP receive window for high bandwidth (e.g. DO-RevB)
 #    write /proc/sys/net/ipv4/tcp_adv_win_scale  2
-
-service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
-    class main
-    user radio
-    disabled
-    group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
-
-service vendor.ril-daemon3 /vendor/bin/hw/rild -c 3
-    class main
-    user radio
-    disabled
-    group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service charger /system/bin/charger
     class charger

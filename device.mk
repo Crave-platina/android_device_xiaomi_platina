@@ -373,13 +373,20 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    rild \
-    librmnetctl \
-    libprotobuf-cpp-full
+    libavservices_minijail.vendor \
+    libprotobuf-cpp-full \
+    librmnetctl
 
 PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio@1.4 \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio@1.5.vendor \
     android.hardware.secure_element@1.0 \
-    android.hardware.secure_element@1.0.vendor
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -411,6 +418,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/qmi_fw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/qmi_fw.conf
 
 # Trust
 PRODUCT_PACKAGES += \
