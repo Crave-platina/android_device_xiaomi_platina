@@ -83,6 +83,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.6:64 \
     libdng_sdk.vendor \
+    libpng.vendor \
+    libutilscallstack.vendor \
     vendor.qti.hardware.camera.device@1.0:64
 
 PRODUCT_PACKAGES += \
@@ -194,6 +196,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.memory@1.0.vendor \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -377,7 +380,9 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
@@ -389,8 +394,11 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
+    libnetutils.vendor \
     libprotobuf-cpp-full \
-    librmnetctl
+    librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
@@ -412,7 +420,8 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl:64 \
-    android.hardware.sensors@1.0-service
+    android.hardware.sensors@1.0-service \
+    libpower.vendor
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -426,6 +435,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
+    libion.vendor \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
