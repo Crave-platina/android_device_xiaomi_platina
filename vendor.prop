@@ -110,7 +110,7 @@ vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
 
 # Display
-debug.hwui.renderer=skiagl
+debug.hwui.renderer=opengl
 debug.renderengine.backend=skiaglthreaded
 debug.sf.auto_latch_unsignaled=0
 debug.sf.early_app_phase_offset_ns=1500000
