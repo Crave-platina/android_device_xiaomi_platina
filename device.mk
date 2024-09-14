@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default
 
@@ -36,14 +35,10 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.sdm660:32
 
 PRODUCT_PACKAGES += \
-    liba2dpoffload \
     libaudio-resampler \
-    libhdmiedid \
-    libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndmonitor \
     libvolumelistener
 
 # Audio configs
