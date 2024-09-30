@@ -391,6 +391,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.zram \
     init.device.rc
 
 PRODUCT_PACKAGES += \
