@@ -347,10 +347,10 @@
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
-    <ctl name="DEC1 Volume" value="84" />
-    <ctl name="DEC2 Volume" value="84" />
-    <ctl name="DEC3 Volume" value="84" />
-    <ctl name="DEC4 Volume" value="84" />
+    <ctl name="DEC1 Volume" value="92" />
+    <ctl name="DEC2 Volume" value="90" />
+    <ctl name="DEC3 Volume" value="90" />
+    <ctl name="DEC4 Volume" value="90" />
 
     <!-- Compander controls -->
     <ctl name="COMP1 Switch" value="1" />
@@ -2594,7 +2594,7 @@
 
     <path name="sidetone-handset">
         <path name="sidetone-iir" />
-        <ctl name="IIR1 INP1 Volume" value="53" />
+        <ctl name="IIR1 INP1 Volume" value="75" />
         <ctl name="RX1 MIX2 INP1" value="IIR1" />
     </path>
 
@@ -2656,6 +2656,7 @@
 
     <path name="handset">
         <ctl name="EAR SPKR PA Gain" value="G_3_DB" />
+        <ctl name="RX1 Digital Volume" value="95" />
         <path name="speaker-mono" />
     </path>
 
