@@ -307,6 +307,11 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
