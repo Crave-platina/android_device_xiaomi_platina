@@ -1,29 +1,38 @@
 //
-// Copyright (C) 2022 The LineageOS Project
-//
+// SPDX-FileCopyrightText: 2024 The LineageOS Project
 // SPDX-License-Identifier: Apache-2.0
 //
 
-// Init scripts
-sh_binary {
-    name: "init.qcom.early_boot.sh",
-    src: "bin/init.qcom.early_boot.sh",
+// fstab
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
+    required: ["fstab.qcom_ramdisk"],
     vendor: true,
 }
 
-sh_binary {
-    name: "init.qcom.post_boot.sh",
-    src: "bin/init.qcom.post_boot.sh",
-    vendor: true,
+prebuilt_etc {
+    name: "fstab.qcom_ramdisk",
+    src: "etc/fstab.qcom",
+    filename: "fstab.qcom",
+    ramdisk: true,
 }
 
-sh_binary {
-    name: "init.qcom.sh",
-    src: "bin/init.qcom.sh",
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "etc/fstab.zram",
     vendor: true,
 }
 
 // Init configuration files
+
+prebuilt_etc {
+    name: "init.device.rc",
+    src: "etc/init.device.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "init.fingerprint.rc",
     src: "etc/init.fingerprint.rc",
@@ -46,6 +55,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    src: "etc/init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
     name: "init.target.rc",
     src: "etc/init.target.rc",
     sub_dir: "init/hw",
@@ -56,5 +72,24 @@ prebuilt_etc {
     name: "ueventd.qcom.rc",
     filename: "ueventd.rc",
     src: "etc/ueventd.qcom.rc",
+    vendor: true,
+}
+
+// Init scripts
+sh_binary {
+    name: "init.qcom.early_boot.sh",
+    src: "bin/init.qcom.early_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    src: "bin/init.qcom.post_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.sh",
+    src: "bin/init.qcom.sh",
     vendor: true,
 }
