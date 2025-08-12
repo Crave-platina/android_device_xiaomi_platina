@@ -4,6 +4,11 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/qcom-caf/msm8998",
+        "vendor/qcom/opensource/display",
+        "vendor/xiaomi/platina",
+    ],
 }
 
 install_symlink {
