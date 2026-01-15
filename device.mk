@@ -25,6 +25,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.product=platina
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 # Qcom common decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
