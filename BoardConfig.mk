@@ -148,7 +148,7 @@ TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 
 # TWRP extra version
-TW_DEVICE_VERSION ?= 4.4
+TW_DEVICE_VERSION ?= 4.4-legacy
 
 # TWRP Debug Flags
 TARGET_USES_LOGD := true
