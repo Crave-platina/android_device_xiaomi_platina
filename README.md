@@ -24,3 +24,35 @@ The Xiaomi MI 8 Lite (codenamed _"platina"_) is a mid-range smartphone from Xiao
 ## Device picture
 
 ![Xiaomi Mi 8 Lite ](https://i.imgur.com/0ffufJ1.png "Xiaomi MI 8 Lite")
+
+## How to build
+
+This device tree was tested and is fully compatible with [minimal-manifest-twrp](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp).
+
+1. Set up the build environment following the instructions [here](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/blob/twrp-12.1/README.md#getting-started)
+
+2. In the root folder of the fetched repo, clone the device tree:
+
+```bash
+git clone https://github.com/hanifardhani/recovery_device_xiaomi_platina -b twrp-12.1 device/xiaomi/platina
+```
+
+3. To build:
+
+```bash
+. build/envsetup.sh
+export ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
+lunch twrp_platina-eng
+mka recoveryimage
+```
+
+## Copyright
+
+```
+#
+# Copyright (C) 2023 The Android Open Source Project
+# Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+```

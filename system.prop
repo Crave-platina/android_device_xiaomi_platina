@@ -1,11 +1,18 @@
-ro.product.brand=xiaomi
-ro.product.name=platina
-ro.product.device=platina
-ro.product.mod_device=platina_global
+# ADB
+ro.adb.secure=0
+
+# Battery Property
+ro.charger.enable_suspend=1
+
+# Device
+ro.display.series=Xiaomi MI 8 Lite
 ro.product.board=sdm660
 ro.board.platform=sdm660
-ro.build.product=platina
-ro.treble.enabled=true
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
+# USB
 sys.usb.controller=a800000.dwc3
 sys.usb.rndis.func.name=rndis_bam
 sys.usb.rmnet.func.name=rmnet_bam
