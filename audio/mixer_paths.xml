@@ -337,20 +337,20 @@
     <ctl name="HPHL Volume" value="9" />
     <ctl name="HPHR Volume" value="9" />
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
-    <ctl name="EAR PA Boost" value="DISABLE" />
+    <ctl name="EAR PA Boost" value="ENABLE" />
 
-    <ctl name="RX1 Digital Volume" value="90" />
-    <ctl name="RX2 Digital Volume" value="90" />
-    <ctl name="RX3 Digital Volume" value="90" />
-    <ctl name="RX4 Digital Volume" value="90" />
-    <ctl name="RX5 Digital Volume" value="90" />
+    <ctl name="RX1 Digital Volume" value="84" />
+    <ctl name="RX2 Digital Volume" value="84" />
+    <ctl name="RX3 Digital Volume" value="84" />
+    <ctl name="RX4 Digital Volume" value="84" />
+    <ctl name="RX5 Digital Volume" value="84" />
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
-    <ctl name="DEC1 Volume" value="92" />
-    <ctl name="DEC2 Volume" value="90" />
-    <ctl name="DEC3 Volume" value="90" />
-    <ctl name="DEC4 Volume" value="90" />
+    <ctl name="DEC1 Volume" value="84" />
+    <ctl name="DEC2 Volume" value="84" />
+    <ctl name="DEC3 Volume" value="84" />
+    <ctl name="DEC4 Volume" value="84" />
 
     <!-- Compander controls -->
     <ctl name="COMP1 Switch" value="1" />
@@ -2594,7 +2594,7 @@
 
     <path name="sidetone-handset">
         <path name="sidetone-iir" />
-        <ctl name="IIR1 INP1 Volume" value="75" />
+        <ctl name="IIR1 INP1 Volume" value="53" />
         <ctl name="RX1 MIX2 INP1" value="IIR1" />
     </path>
 
@@ -2655,8 +2655,11 @@
     </path>
 
     <path name="handset">
-        <ctl name="EAR SPKR PA Gain" value="G_3_DB" />
-        <ctl name="RX1 Digital Volume" value="95" />
+        <ctl name="INT0_MI2S_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RDAC2 MUX" value="RX1" />
+        <ctl name="EAR PA Gain" value="POS_3_DB" />
+        <ctl name="EAR_S" value="Switch" />
         <path name="speaker-mono" />
     </path>
 
@@ -2712,6 +2715,7 @@
         <ctl name="COMP0 RX2" value="1" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
+        <ctl name="EAR SPKR PA Gain" value="G_3_DB" />
     </path>
 
     <path name="headphones-44.1">
