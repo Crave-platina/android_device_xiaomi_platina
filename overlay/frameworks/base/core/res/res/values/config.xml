@@ -118,36 +118,121 @@
          backlight values for LUX levels between these control points.
 
          Must be overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessLevels">
-        <item>1</item> <!-- pitch black -->
-        <item>5</item> <!-- dark indoor -->
-        <item>10</item> <!-- twilight -->
-        <item>50</item> <!-- dim indoor -->
-        <item>100</item> <!-- home -->
-        <item>300</item> <!-- office -->
-        <item>500</item> <!-- sunrise -->
-        <item>1000</item> <!-- overcast -->
-        <item>3000</item> <!-- indirect sun -->
-        <item>10000</item> <!-- daylight -->
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>400</item>
+        <item>600</item>
+        <item>1000</item>
     </integer-array>
 
-    <!-- Array of output values for LCD backlight corresponding to the LUX values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-         The brightness values must be between 0 and 255 and be non-decreasing.
-         This must be overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessLcdBacklightValues">
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>800</item>
+        <item>800</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+    </integer-array>
+
+    <integer-array name="config_ambientThresholdLevels">
         <item>2</item>
         <item>10</item>
+        <item>30</item>
+        <item>100</item>
+        <item>800</item>
+        <item>2000</item>
+        <item>4000</item>
+    </integer-array>
+
+    <integer-array name="config_autoBrightnessLevels">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item> 
+        <item>4</item> 
+        <item>5</item>
+        <item>7</item> 
+        <item>8</item> 
+        <item>13</item>
+        <item>17</item> 
+        <item>21</item>
+        <item>26</item> 
+        <item>30</item>
+        <item>34</item> 
+        <item>39</item> 
+        <item>60</item>
+        <item>100</item> 
+        <item>140</item> 
+        <item>200</item>
+        <item>310</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item> 
+        <item>800</item> 
+        <item>1000</item> 
+        <item>1200</item>
+        <item>1500</item> 
+        <item>2000</item> 
+        <item>2500</item> 
+        <item>3000</item> 
+        <item>4000</item>
+    </integer-array>
+
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>2</item> 
+        <item>3</item> 
+        <item>4</item>  
+        <item>5</item>  
+        <item>6</item>
+        <item>7</item> 
+        <item>8</item>  
+        <item>12</item> 
+        <item>15</item> 
         <item>18</item>
-        <item>29</item>
-        <item>48</item>
-        <item>74</item>
-        <item>107</item>
-        <item>152</item>
-        <item>194</item>
-        <item>254</item>
+        <item>20</item>  
+        <item>23</item> 
+        <item>26</item>  
+        <item>30</item> 
+        <item>36</item>
+        <item>48</item> 
+        <item>60</item> 
+        <item>75</item> 
+        <item>92</item>  
+        <item>108</item>
+        <item>125</item> 
+        <item>140</item> 
+        <item>160</item> 
+        <item>180</item>
+        <item>200</item>
+        <item>220</item> 
+        <item>235</item>
+        <item>245</item> 
+        <item>250</item>
+        <item>253</item>
         <item>255</item>
+    </integer-array>
+
+    <integer-array name="config_screenBrighteningThresholds">
+        <item>0</item>
+    </integer-array>
+
+    <array name="config_screenBrightnessNits">
+        <item>2.0</item>
+        <item>468.0</item>
+    </array>
+
+    <integer-array name="config_screenBrightnessBacklight">
+        <item>1</item>
+        <item>255</item>
+    </integer-array>
+
+    <integer-array name="config_screenDarkeningThresholds">
+        <item>0</item>
     </integer-array>
 
     <!-- Screen brightness used to dim the screen when the user activity
