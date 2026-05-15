@@ -28,6 +28,11 @@
 #
 
 on boot
+    # Audio
+    write /sys/kernel/sound_control/headphone_gain "12 12"
+    chown system system /sys/kernel/sound_control/headphone_gain
+    chmod 0664 /sys/kernel/sound_control/headphone_gain
+
     # Camera
     chmod 0660 /sys/android_camera/sensor
     chown system system /sys/android_camera/sensor
